@@ -1,0 +1,276 @@
+body{
+  background-image: url(stars.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  color: rgba(255,255,255,.75);
+  /* font-family: 'mario'; */
+  background-color: rgb(25,25,25);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: block;
+  align-content: center;
+  border: 0;
+  background-image: url(sunset.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100vw;
+  height: 65px;
+
+}
+
+.headertext {
+  position: relative;
+  top: 5px;
+  font-family: arial sans-serif;
+  text-align-last: center;
+  color: #ffc85b;
+  text-shadow: 3px 3px 3px #223149;
+  font-size: 8pt;
+}
+
+/* @font-face {
+  font-family: mario;
+  src: url(mario.ttf); */
+  a
+  {
+  text-decoration: none;
+  color: white;
+  text-shadow: #5e5f60 4.5px 4.5px 4.5px;
+
+  transition: color 0.3s ease;
+  }
+
+  a:hover {
+  color: red;
+}
+
+  #menuToggle
+  {
+  display: block;
+  position: relative;
+  float: left;
+  top: 5px;
+  left: 5px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+  }
+
+  #menuToggle input
+  {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  cursor: default;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+  }
+
+  /*
+  * Just a quick hamburger
+  */
+  #menuToggle span
+  {
+  display: block;
+
+  width: 35px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: white;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4.5px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child
+  {
+  transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2)
+  {
+  transform-origin: 0% 100%;
+  }
+
+  /*
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+  #menuToggle input:checked ~ span
+  {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+  }
+
+  /*
+  * But let's hide the middle one.
+  */
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+  * Ohyeah and the last one should go the other direction
+  */
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+  transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+  #menu
+  {
+  position: relative;
+  text-align: left;
+  text-align-last: left;
+  top: 100px;
+  left: 25px;
+  width: 175px;
+  margin: -100px 0 0 -50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: inherit;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  #menu li
+  {
+  padding: 10px 0;
+  font-size: 22px;
+  }
+
+  /*
+  * And let's slide it in from the left
+  */
+  #menuToggle input:checked ~ ul
+  {
+  transform: none;
+  }
+
+.line-1 {
+    position: absolute;
+    left: 50%;
+    top: 75px;
+    width: 19em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    color: #e5f5ff;
+    text-shadow: 3px 3px 3px #131c21;
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+
+/* Animation */
+.anim-typewriter{
+
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+
+  from{width: 0;}
+  to{width: 17em;}
+}
+@keyframes blinkTextCursor{
+
+  from{width: 0, rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.glass {
+  z-index: 2;
+ top: 28%;
+ left: 33%;
+ background: inherit;
+ width: 450px;
+ height: 350px;
+ position: absolute;
+ overflow: hidden;
+ border-radius: 8px 8px 8px 8px;
+ box-shadow: inset 10px 10px 10px 1000px black;
+}
+
+.glasstext {
+  z-index: 3;
+  display: //als ik dit weghaal verdwijnt de grijze achtergrond??//
+  background: inherit;
+  width: 450px;
+  height: 350px;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #b7ecf7;
+  text-shadow: black 7px 6px 5px;
+}
+
+.glass::before {
+ z-index: 1;
+ content: " ";
+ background: inherit;
+ position: absolute;
+ left: -25px;
+ right: 0;
+ top: -25px;
+ bottom: 0;
+ filter: blur(3px);
+}
+
+/* .burger{
+  display: block;
+  position: relative;
+  top: 350px;
+  left: 350px;
+  height: 25px;
+  width: 25px;
+  background-image: url(burgermenu.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1000;
+} */

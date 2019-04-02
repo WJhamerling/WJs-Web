@@ -1,0 +1,37 @@
+body{
+  background-image: url(stars.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  color: rgba(255,255,255,.75);
+  background-color: rgb(25,25,25);
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  display: block;
+  align-content: center;
+  border: 0;
+  background-image: url(sunset.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100vw;
+  height: 65px;
+
+}
+
+.headertext {
+  position: relative;
+  top: 5px;
+  font-family: arial sans-serif;
+  text-align-last: center;
+  color: #ffc85b;
+  text-shadow: 3px 3px 3px #223149;
+  font-size: 8pt;
+}
