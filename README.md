@@ -1,4 +1,4 @@
-# wjsite
+# WJ's Web
 
 I started creating this page while learning html and CSS.
 
